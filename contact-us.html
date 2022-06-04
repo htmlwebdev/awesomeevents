@@ -92,14 +92,22 @@
                                     <!--site-navigation -->
                                     <div id="site-navigation" class="site-navigation">
                                         <!-- header-icins -->
+                                    <div class="ttm-menu-toggle">
+                                        <input type="checkbox" id="menu-toggle-form" />
+                                        <label for="menu-toggle-form" class="ttm-menu-toggle-block">
+                                            <span class="toggle-block toggle-blocks-1"></span>
+                                            <span class="toggle-block toggle-blocks-2"></span>
+                                            <span class="toggle-block toggle-blocks-3"></span>
+                                        </label>
+                                    </div>
                                         <nav id="menu" class="menu">
                                             <ul class="dropdown">
-                                                <li class="active"><a href="index.html">Home</a></li>
+                                                <li><a href="index.html">Home</a></li>
                                                 <li><a href="about-us.html">About Us</a></li>
                                                 <li><a href="services.html">Services</a></li>
                                                 <li><a href="gallery.html">Gallery</a></li>
                                                 <li><a href="faq.html">FAQs</a></li>
-                                                <li><a href="contact-us.html">Contact Us</a></li>
+                                                <li class="active"><a href="contact-us.html">Contact Us</a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -142,14 +150,13 @@
                     <div class="row text-left">
                         <div class="col-lg-9 col-md-9">
                             <div class=" section-title clearfix">
-                                <h4>GET IN TOUCH</h4>
+                                <h4>We'd be delighted to hear from you.</h4>
                                 <h2 class="title">Contact Us</h2>
                                 <div class="heading-seperator"><span></span></div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’type specimen book.</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3">
-                            <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-round ttm-btn-style-border ttm-btn-color-black mt-55 pull-right mb-25" href="#" title="">View Events</a>
+                            <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-round ttm-btn-style-border ttm-btn-color-black mt-55 pull-right mb-25" href="services.html" title="">View Services</a>
                         </div>
                     </div><!--row-end-->
                     <div class="row mt-25">
@@ -247,7 +254,7 @@
                                         <i class="ti ti-comment"></i>
                                         <span class="ttm-form-control"><textarea class="text-area" name="message" placeholder="Your Message:*" required="required"></textarea></span>
                                     </label>
-                                    <input name="submit" type="submit" value="Make a Reservation" class="ttm-btn ttm-btn-size-md ttm-btn-shape-round ttm-btn-style-fill ttm-btn-color-skincolor mt-20" id="submit" title="Make a Reservation">
+                                    <input name="submit" type="submit" value="Make a Reservation" class="ttm-btn ttm-btn-size-md ttm-btn-shape-round ttm-btn-style-fill ttm-btn-color-skincolor mt-20" id="submit" title="Send Message">
                                </form>
                             </div>
                         </div>
@@ -256,7 +263,7 @@
             </section>
             <!--map-start-->
             <div class="map-wrapper">
-                <div id="map_canvas"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448181.163741622!2d76.81306442366602!3d28.64727993557044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1654302145140!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <!--map-end-->
             <!--CTA-section-start-->
@@ -383,25 +390,9 @@
     <script src="js/jquery-waypoints.js"></script>    
     <script src="js/owl.carousel.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js?key="></script>
     <script src="js/main.js"></script>
 
 
-     <script>
-
-        function initialize() {
-            var latlng = new google.maps.LatLng(-34.397, 150.644);
-            var myOptions = {
-                zoom: 8,
-                center: latlng,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-            var map = new google.maps.Map(document.getElementById("map_canvas"),
-                    myOptions);
-        }
-        google.maps.event.addDomListener(window, "load", initialize);
-
-    </script>
 
 
 </body>
